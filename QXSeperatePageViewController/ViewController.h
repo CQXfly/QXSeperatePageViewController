@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import  "QXSeperatePageViewController.h"
+#import "QXSeperatePageChildViewController.h"
+@interface ViewController : QXSeperatePageViewController
 
 
 @end

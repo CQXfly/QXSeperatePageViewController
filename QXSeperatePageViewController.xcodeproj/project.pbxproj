@@ -14,6 +14,10 @@
 		C228931F1B57A121000B1ECA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C228931E1B57A121000B1ECA /* Images.xcassets */; };
 		C22893221B57A121000B1ECA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22893201B57A121000B1ECA /* LaunchScreen.xib */; };
 		C228932E1B57A122000B1ECA /* QXSeperatePageViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C228932D1B57A122000B1ECA /* QXSeperatePageViewControllerTests.m */; };
+		C228933E1B57A2A2000B1ECA /* QXSeperatePageHeadSelectedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C228933D1B57A2A2000B1ECA /* QXSeperatePageHeadSelectedView.m */; };
+		C22893401B57A2E5000B1ECA /* ReadMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C228933F1B57A2E5000B1ECA /* ReadMe.m */; };
+		C22893431B57B840000B1ECA /* QXSeperatePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22893421B57B840000B1ECA /* QXSeperatePageViewController.m */; };
+		C22893461B57C3CE000B1ECA /* QXSeperatePageChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22893451B57C3CE000B1ECA /* QXSeperatePageChildViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		C22893271B57A122000B1ECA /* QXSeperatePageViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QXSeperatePageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C228932C1B57A122000B1ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C228932D1B57A122000B1ECA /* QXSeperatePageViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXSeperatePageViewControllerTests.m; sourceTree = "<group>"; };
+		C228933C1B57A2A2000B1ECA /* QXSeperatePageHeadSelectedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXSeperatePageHeadSelectedView.h; sourceTree = "<group>"; };
+		C228933D1B57A2A2000B1ECA /* QXSeperatePageHeadSelectedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXSeperatePageHeadSelectedView.m; sourceTree = "<group>"; };
+		C228933F1B57A2E5000B1ECA /* ReadMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadMe.m; sourceTree = "<group>"; };
+		C22893411B57B840000B1ECA /* QXSeperatePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXSeperatePageViewController.h; sourceTree = "<group>"; };
+		C22893421B57B840000B1ECA /* QXSeperatePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXSeperatePageViewController.m; sourceTree = "<group>"; };
+		C22893441B57C3CE000B1ECA /* QXSeperatePageChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXSeperatePageChildViewController.h; sourceTree = "<group>"; };
+		C22893451B57C3CE000B1ECA /* QXSeperatePageChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXSeperatePageChildViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +92,12 @@
 		C22893101B57A121000B1ECA /* QXSeperatePageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C22893151B57A121000B1ECA /* AppDelegate.h */,
-				C22893161B57A121000B1ECA /* AppDelegate.m */,
-				C22893181B57A121000B1ECA /* ViewController.h */,
-				C22893191B57A121000B1ECA /* ViewController.m */,
+				C22893371B57A1F5000B1ECA /* QXPageViewController */,
 				C228931B1B57A121000B1ECA /* Main.storyboard */,
 				C228931E1B57A121000B1ECA /* Images.xcassets */,
 				C22893201B57A121000B1ECA /* LaunchScreen.xib */,
 				C22893111B57A121000B1ECA /* Supporting Files */,
+				C228933F1B57A2E5000B1ECA /* ReadMe.m */,
 			);
 			path = QXSeperatePageViewController;
 			sourceTree = "<group>";
@@ -117,6 +126,55 @@
 				C228932C1B57A122000B1ECA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C22893371B57A1F5000B1ECA /* QXPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C228933B1B57A231000B1ECA /* Model */,
+				C228933A1B57A22A000B1ECA /* View */,
+				C22893391B57A214000B1ECA /* Controller */,
+				C22893381B57A208000B1ECA /* Other */,
+			);
+			name = QXPageViewController;
+			sourceTree = "<group>";
+		};
+		C22893381B57A208000B1ECA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C22893151B57A121000B1ECA /* AppDelegate.h */,
+				C22893161B57A121000B1ECA /* AppDelegate.m */,
+				C22893181B57A121000B1ECA /* ViewController.h */,
+				C22893191B57A121000B1ECA /* ViewController.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		C22893391B57A214000B1ECA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C22893411B57B840000B1ECA /* QXSeperatePageViewController.h */,
+				C22893421B57B840000B1ECA /* QXSeperatePageViewController.m */,
+				C22893441B57C3CE000B1ECA /* QXSeperatePageChildViewController.h */,
+				C22893451B57C3CE000B1ECA /* QXSeperatePageChildViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C228933A1B57A22A000B1ECA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C228933C1B57A2A2000B1ECA /* QXSeperatePageHeadSelectedView.h */,
+				C228933D1B57A2A2000B1ECA /* QXSeperatePageHeadSelectedView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C228933B1B57A231000B1ECA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C228933E1B57A2A2000B1ECA /* QXSeperatePageHeadSelectedView.m in Sources */,
+				C22893401B57A2E5000B1ECA /* ReadMe.m in Sources */,
+				C22893461B57C3CE000B1ECA /* QXSeperatePageChildViewController.m in Sources */,
 				C228931A1B57A121000B1ECA /* ViewController.m in Sources */,
+				C22893431B57B840000B1ECA /* QXSeperatePageViewController.m in Sources */,
 				C22893171B57A121000B1ECA /* AppDelegate.m in Sources */,
 				C22893141B57A121000B1ECA /* main.m in Sources */,
 			);
