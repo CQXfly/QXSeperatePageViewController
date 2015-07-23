@@ -40,13 +40,14 @@
     UILabel *centerLabel = [[UILabel alloc] init];
     centerLabel.font = [UIFont boldSystemFontOfSize:25.0f];
     [self.view addSubview:centerLabel];
+    self.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1];
     centerLabel.text = alias;
     [centerLabel sizeToFit];
     centerLabel.center = self.view.center;
     centerLabel.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin;
     
     
-    self.view.backgroundColor = [UIColor whiteColor];
+//    self.view.backgroundColor = [UIColor whiteColor];
     
     }
 
